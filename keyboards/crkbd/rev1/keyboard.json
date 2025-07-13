@@ -26,14 +26,14 @@
         }
     },
     "rgblight": {
-        "led_count": 54,
-        "split_count": [27, 27]
+        "led_count": 60,
+        "split_count": [30, 30]
     },
     "ws2812": {
         "pin": "D3"
     },
     "rgb_matrix": {
-        "split_count": [27, 27],
+        "split_count": [30, 30],
         "layout": [
             {"x": 85, "y": 16, "flags": 2},
             {"x": 50, "y": 13, "flags": 2},
