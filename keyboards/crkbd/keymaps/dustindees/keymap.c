@@ -557,7 +557,6 @@ static void process_center_thumb_magic(uint16_t keycode, uint8_t mods) {
         case LGUI_T(KC_A): { MAGIC_STRING("u",         KC_NO); } break;
         case KC_U: { MAGIC_STRING("a",         KC_NO); } break;
         case KC_P: { MAGIC_STRING("a",         KC_NO); } break;
-        case S(KC_P): { MAGIC_STRING("a",         KC_NO); } break;
     }
 }
 // static void process_right_thumb_magic(uint16_t keycode, uint8_t mods) {
