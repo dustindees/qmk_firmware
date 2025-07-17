@@ -49,6 +49,7 @@ enum custom_keycodes {
     ADDR_BAR,
     PREV_TAB,
     NEXT_TAB,
+    CTRL_ALT_DEL,
     //MAGIC_LI,
     //MAGIC_RI,
 };
@@ -276,7 +277,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
     XXXXXXX, KC_SEMICOLON, S(KC_SEMICOLON), KC_ESC, KC_MINUS,                   S(KC_SLSH), KC_GRAVE, KC_QUOT, S(KC_QUOT), XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-    XXXXXXX, XXXXXXX, XXXXXXX, TO(_NUM), XXXXXXX,                               XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+    CTRL_ALT_DEL, XXXXXXX, XXXXXXX, TO(_NUM), XXXXXXX,                               XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           TO(_DEF),   XXXXXXX,  MAGIC_CT,     CW_TOGG, LT(_DEL, KC_SPC), QK_LEAD
                                       //`--------------------------'  `--------------------------'
@@ -739,6 +740,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 unregister_code(KC_LCTL);
                 tap_code(KC_ENT);
             }
+            return false;
+        case CTRL_ALT_DEL:
+            if (record->event.pressed) {
+                register_code(KC_LCTL);
+                register_code(KC_LALT);
+                tap_code(KC_DEL);
+                unregister_code(KC_LALT);
+                unregister_code(KC_LCTL);
+            }
+            return false;
     }
 
     update_swapper(
