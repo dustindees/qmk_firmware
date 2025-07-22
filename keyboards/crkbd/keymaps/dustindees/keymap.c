@@ -251,7 +251,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
     KC_LSFT, LALT_T(ADDR_BAR), LGUI_T(PREV_TAB), LCTL_T(NEXT_TAB), KC_TAB,      XXXXXXX, KC_LEFT,   KC_DOWN, KC_RIGHT, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-    C(G((KC_LEFT))), XXXXXXX, XXXXXXX, MO(_NUM), C(G((KC_RIGHT))),              KC_PAGE_DOWN, LT(_NUM, KC_END), XXXXXXX, RCS(KC_RIGHT), S(KC_END),
+    C(G((KC_LEFT))), XXXXXXX, QK_BOOT, MO(_NUM), C(G((KC_RIGHT))),              KC_PAGE_DOWN, LT(_NUM, KC_END), QK_BOOT, RCS(KC_RIGHT), S(KC_END),
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           TO(_DEF), MO(_SYM1),  MAGIC_CT,     OS_SHFT, LT(_DEL, KC_SPC), QK_LEAD
                                       //`--------------------------'  `--------------------------'
@@ -447,6 +447,18 @@ void leader_end_user(void) {
         tap_code16(KC_KP_6);
         unregister_code(KC_LALT);
         tap_code16(KC_NUM_LOCK);
+    } else if (leader_sequence_one_key(KC_3)) {
+        register_code(KC_LALT);
+        register_code(KC_LSFT);
+        register_code(KC_LCTL);
+        tap_code16(KC_M);
+        unregister_code(KC_LALT);
+        unregister_code(KC_LSFT);
+        unregister_code(KC_LCTL);
+        tap_code16(KC_3);
+        tap_code16(KC_0);
+        tap_code16(KC_0);
+        tap_code16(KC_ENTER);
     } else if (leader_sequence_one_key(KC_LEFT)) {
         tap_code16(KC_NUM_LOCK);
         register_code(KC_LALT);

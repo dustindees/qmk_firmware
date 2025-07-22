@@ -28,7 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TERM 250
 //#define TAPPING_TERM_PER_KEY
 #define FLOW_TAP_TERM 200
-#define LEADER_TIMEOUT 1250
+#define LEADER_TIMEOUT 500
 #define LEADER_PER_KEY_TIMING
 #define LEADER_KEY_STRICT_KEY_PROCESSING
 #define RGBLIGHT_MAX_LAYERS 9
