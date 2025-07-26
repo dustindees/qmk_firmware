@@ -370,7 +370,8 @@ bool is_flow_tap_key(uint16_t keycode) {
     }
     // Remove keys to disable flow tap for them
     switch (get_tap_keycode(keycode)) {
-        case KC_A ... KC_Z:
+        case KC_A ... KC_C:
+        case KC_E ... KC_Z:
         case KC_DOT:
         case KC_COMM:
         case KC_SCLN:
