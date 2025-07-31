@@ -219,7 +219,7 @@ void matrix_scan_user(void) {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_DEF] = LAYOUT_split_3x5_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-     KC_B, KC_F, LT(_NAV1, KC_L), LT(_NAV2, KC_K), LT(_FUN, KC_Q),              KC_P, LT(_NAV2, KC_W), LT(_NAV1, KC_O), KC_U, KC_COMM,
+     KC_B, KC_F, LT(_NAV1, KC_L), LT(_NAV2, KC_K), KC_Q,                        KC_P, LT(_NAV2, KC_W), LT(_NAV1, KC_O), KC_U, KC_COMM,
   //|--------+--------+--------+--------+--------|                              |--------+--------+--------+--------+--------|
      LSFT_T(KC_N), LALT_T(KC_S), LGUI_T(KC_H), LCTL_T(KC_T), KC_M,              KC_Y, LCTL_T(KC_C), LGUI_T(KC_A), LALT_T(KC_E), LSFT_T(KC_I),
   //|--------+--------+--------+--------+--------|                              |--------+--------+--------+--------+--------|
@@ -460,6 +460,18 @@ void leader_end_user(void) {
         tap_code16(KC_0);
         tap_code16(KC_0);
         tap_code16(KC_ENTER);
+    } else if (leader_sequence_one_key(KC_G)) {
+        register_code(KC_LGUI);
+        tap_code16(KC_1);
+        unregister_code(KC_LGUI);
+    } else if (leader_sequence_one_key(KC_QUOTE)) {
+        register_code(KC_LGUI);
+        tap_code16(KC_2);
+        unregister_code(KC_LGUI);
+    } else if (leader_sequence_one_key(KC_SLSH)) {
+        register_code(KC_LGUI);
+        tap_code16(KC_3);
+        unregister_code(KC_LGUI);
     } else if (leader_sequence_one_key(KC_LEFT)) {
         tap_code16(KC_NUM_LOCK);
         register_code(KC_LALT);
