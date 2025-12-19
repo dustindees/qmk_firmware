@@ -304,7 +304,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------|                              |--------+--------+--------+--------+--------|
      XXXXXXX, line_begin_del, C(KC_BSPC), KC_BSPC, XXXXXXX,                     XXXXXXX, KC_ENT, right_ret, S(KC_ENT), XXXXXXX,
   //|--------+--------+--------+--------+--------|                              |--------+--------+--------+--------+--------|
-     XXXXXXX, XXXXXXX, XXXXXXX, TO(_NUM), XXXXXXX,                                XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+     KC_LCTL, KC_LSFT, XXXXXXX, TO(_NUM), XXXXXXX,                                XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           TO(_DEF),   MO(_SYM1),  MAGIC_CT,         OS_SHFT, LT(_DEL, KC_SPC), QK_LEAD
                                       //`--------------------------'  `--------------------------'
@@ -341,9 +341,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
     KC_BACKSLASH, KC_ASTERISK, KC_SLSH, KC_DLR, KC_TILD,                       KC_PLUS, KC_7, KC_8, KC_9, KC_X,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-    OS_SHFT, OS_ALT, OS_GUI, OS_CTRL, S(KC_8),                                 KC_MINS, KC_4, KC_5, KC_6, KC_DOT,
+    OS_SHFT, OS_ALT, OS_GUI, OS_CTRL, S(KC_8),                                 KC_MINS, KC_4, KC_5, KC_6, KC_0,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-    KC_NUM_LOCK, KC_NO, KC_NUM_LOCK, KC_NO, KC_PERC,                           KC_EQL, KC_1, KC_2, KC_3, KC_0,
+    KC_NUM_LOCK, KC_NO, KC_NUM_LOCK, KC_NO, KC_PERC,                           KC_EQL, KC_1, KC_2, KC_3, KC_DOT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           TO(_DEF), MO(_SYM1),  MAGIC_CT,     KC_DOT, LT(_DEL, KC_SPC), QK_LEAD
                                       //`--------------------------'  `--------------------------'
