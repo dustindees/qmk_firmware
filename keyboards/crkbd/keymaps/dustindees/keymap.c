@@ -479,6 +479,24 @@ void leader_end_user(void) {
         tap_code16(KC_KP_7);
         unregister_code(KC_LALT);
         tap_code16(KC_NUM_LOCK);
+    } else if (leader_sequence_two_keys(KC_X, KC_1)) {
+        register_code(KC_LSFT);
+        register_code(KC_LGUI);
+        tap_code16(KC_1);
+        unregister_code(KC_LSFT);
+        unregister_code(KC_LGUI);
+    } else if (leader_sequence_two_keys(KC_X, KC_2)) {
+        register_code(KC_LSFT);
+        register_code(KC_LGUI);
+        tap_code16(KC_2);
+        unregister_code(KC_LSFT);
+        unregister_code(KC_LGUI);
+    } else if (leader_sequence_two_keys(KC_X, KC_3)) {
+        register_code(KC_LSFT);
+        register_code(KC_LGUI);
+        tap_code16(KC_3);
+        unregister_code(KC_LSFT);
+        unregister_code(KC_LGUI);
     } else if (leader_sequence_three_keys(LT(_NUM, KC_D), LALT_T(KC_E), LT(_NAV1, KC_L))) {
         tap_code16(KC_NUM_LOCK);
         register_code(KC_LALT);
