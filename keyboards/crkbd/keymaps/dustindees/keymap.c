@@ -427,6 +427,7 @@ void leader_end_user(void) {
         tap_code16(KC_KP_2);
         tap_code16(KC_KP_4);
         unregister_code(KC_LALT);
+    // ↑
     } else if (leader_sequence_one_key(KC_UP)) {
         tap_code16(KC_NUM_LOCK);
         register_code(KC_LALT);
@@ -434,6 +435,7 @@ void leader_end_user(void) {
         tap_code16(KC_KP_4);
         unregister_code(KC_LALT);
         tap_code16(KC_NUM_LOCK);
+    // ↓
     } else if (leader_sequence_one_key(KC_DOWN)) {
         tap_code16(KC_NUM_LOCK);
         register_code(KC_LALT);
@@ -441,6 +443,7 @@ void leader_end_user(void) {
         tap_code16(KC_KP_5);
         unregister_code(KC_LALT);
         tap_code16(KC_NUM_LOCK);
+    // →
     } else if (leader_sequence_one_key(KC_RIGHT)) {
         tap_code16(KC_NUM_LOCK);
         register_code(KC_LALT);
@@ -472,11 +475,21 @@ void leader_end_user(void) {
         register_code(KC_LGUI);
         tap_code16(KC_3);
         unregister_code(KC_LGUI);
+    // ↓
     } else if (leader_sequence_one_key(KC_LEFT)) {
         tap_code16(KC_NUM_LOCK);
         register_code(KC_LALT);
         tap_code16(KC_KP_2);
         tap_code16(KC_KP_7);
+        unregister_code(KC_LALT);
+        tap_code16(KC_NUM_LOCK);
+   } else if (leader_sequence_one_key(KC_MINUS)) {
+        tap_code16(KC_NUM_LOCK);
+        register_code(KC_LALT);
+        tap_code16(KC_KP_0);
+        tap_code16(KC_KP_1);
+        tap_code16(KC_KP_5);
+        tap_code16(KC_KP_1);
         unregister_code(KC_LALT);
         tap_code16(KC_NUM_LOCK);
     } else if (leader_sequence_two_keys(KC_X, KC_1)) {
