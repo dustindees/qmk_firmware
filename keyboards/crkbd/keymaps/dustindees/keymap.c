@@ -463,14 +463,17 @@ void leader_end_user(void) {
         tap_code16(KC_0);
         tap_code16(KC_0);
         tap_code16(KC_ENTER);
-    } else if (leader_sequence_one_key(KC_G)) {
+    // hyprland workspace 1
+    } else if (leader_sequence_one_key(LT(_NUM, KC_G))) {
         register_code(KC_LGUI);
         tap_code16(KC_1);
         unregister_code(KC_LGUI);
+    // hyprland workspace 2
     } else if (leader_sequence_one_key(KC_QUOTE)) {
         register_code(KC_LGUI);
         tap_code16(KC_2);
         unregister_code(KC_LGUI);
+    // hyprland workspace 3
     } else if (leader_sequence_one_key(KC_SLSH)) {
         register_code(KC_LGUI);
         tap_code16(KC_3);
