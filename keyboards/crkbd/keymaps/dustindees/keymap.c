@@ -251,7 +251,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
     KC_LSFT, LALT_T(ADDR_BAR), LGUI_T(PREV_TAB), LCTL_T(NEXT_TAB), KC_TAB,      XXXXXXX, KC_LEFT,   KC_DOWN, KC_RIGHT, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-    C(G((KC_LEFT))), XXXXXXX, QK_BOOT, MO(_NUM), C(G((KC_RIGHT))),              KC_PAGE_DOWN, LT(_NUM, KC_END), QK_BOOT, RCS(KC_RIGHT), S(KC_END),
+    C(G((KC_LEFT))), XXXXXXX, XXXXXXX, MO(_NUM), C(G((KC_RIGHT))),              KC_PAGE_DOWN, LT(_NUM, KC_END), XXXXXXX, RCS(KC_RIGHT), S(KC_END),
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           TO(_DEF), MO(_SYM1),  MAGIC_CT,     OS_SHFT, LT(_DEL, KC_SPC), QK_LEAD
                                       //`--------------------------'  `--------------------------'
@@ -264,7 +264,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
     KC_LSFT, LALT_T(G(KC_3)), LGUI_T(G(KC_2)), LCTL_T(G(KC_1)), KC_TAB,        XXXXXXX,  KC_LEFT, KC_DOWN, KC_RIGHT, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-    XXXXXXX, LSG(KC_3), LSG(KC_2), LSG(KC_1), XXXXXXX,                         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+    XXXXXXX, LSG(KC_3), LSG(KC_2), LSG(KC_1), XXXXXXX,                         XXXXXXX, XXXXXXX, QK_BOOT, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           TO(_DEF),   MO(_SYM1),  MAGIC_CT,     OS_SHFT, LT(_DEL, KC_SPC), QK_LEAD
                                       //`--------------------------'  `--------------------------'
