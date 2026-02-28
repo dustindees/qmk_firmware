@@ -304,7 +304,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------|                              |--------+--------+--------+--------+--------|
      XXXXXXX, line_begin_del, C(KC_BSPC), KC_BSPC, XXXXXXX,                     XXXXXXX, KC_ENT, right_ret, S(KC_ENT), XXXXXXX,
   //|--------+--------+--------+--------+--------|                              |--------+--------+--------+--------+--------|
-     KC_LCTL, KC_LSFT, XXXXXXX, TO(_NUM), XXXXXXX,                                XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+     KC_LCTL, KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX,                                XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           TO(_DEF),   MO(_SYM1),  MAGIC_CT,         OS_SHFT, LT(_DEL, KC_SPC), QK_LEAD
                                       //`--------------------------'  `--------------------------'
