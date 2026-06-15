@@ -260,9 +260,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // NAV2 LINUX
     [_NAV2] = LAYOUT_split_3x5_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-    XXXXXXX, dup_tab, G(KC_LEFT), G(KC_RIGHT), XXXXXXX,                        XXXXXXX, XXXXXXX, KC_UP, XXXXXXX, XXXXXXX,
+    XXXXXXX, dup_tab, G(KC_LEFT), G(KC_RIGHT), XXXXXXX,                        XXXXXXX, XXXXXXX, KC_K, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-    KC_LSFT, LALT_T(G(KC_3)), LGUI_T(G(KC_2)), LCTL_T(G(KC_1)), KC_TAB,        XXXXXXX,  KC_LEFT, KC_DOWN, KC_RIGHT, XXXXXXX,
+    KC_LSFT, LALT_T(G(KC_3)), LGUI_T(G(KC_2)), LCTL_T(G(KC_1)), KC_TAB,        XXXXXXX,  KC_H, KC_J, KC_L, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
     XXXXXXX, LSG(KC_3), LSG(KC_2), LSG(KC_1), XXXXXXX,                         XXXXXXX, XXXXXXX, QK_BOOT, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
